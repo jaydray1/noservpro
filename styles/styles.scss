@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Subrayada');
+@import url('https://fonts.googleapis.com/css?family=Barrio');
+@import url('https://fonts.googleapis.com/css?family=Coda+Caption:800');
+
+body, html {
+  height:100%;
+}
+li {
+  height: 3em;
+  font-family: 'Montserrat Subrayada', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 45px;
+}
+li:hover {
+  background-color: grey;
+}
+.banner {
+  display: flex;
+  flex-direction: column;
+  background: url("../runbackground.jpg") center no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+}
+.circletrain {
+  position:absolute;
+  vertical-align: middle;
+  top: 40px;
+  right: 50px;
+  height: 200px;
+  width: 200px;
+  border: 3px solid red;
+  border-radius: 50%;
+  background: url("../gazelle-eat.jpg") center no-repeat;
+  background-size: cover;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+.circletrain2 {
+  position:absolute;
+  vertical-align: middle;
+  top: 40px;
+  right: 300px;
+  height: 200px;
+  width: 200px;
+  border: 3px solid red;
+  border-radius: 50%;
+  background: url("../lionface.jpg") center no-repeat;
+  background-size: cover;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+.title {
+  display: flex;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 30vh;
+  color: white;
+  // border: 2px solid red;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: baseline;
+  height: 35vh;
+  width: 50vw;
+}
+.title2 {
+  display: flex;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 30vh;
+  color: white;
+  // border: 2px solid red;
+  flex-direction: column;
+  align-items: baseline;
+  text-align: center;
+  margin-left: 133px;
+  justify-content: center;
+  height: 35vh;
+  width: 50vw;
+}
+.title3 {
+  display: flex;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 30vh;
+  color: white;
+  // border: 2px solid red;
+  flex-direction: column;
+  align-items: baseline;
+  text-align: center;
+  // margin-left: 467px;
+  justify-content: center;
+  height: 35vh;
+  width: 50vw;
+  padding-left: 24rem;
+}
+.title4 {
+  display: flex;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 30vh;
+  color: white;
+  // border: 2px solid red;
+  flex-direction: column;
+  align-items: baseline;
+  text-align: center;
+  // margin-left: 129px;
+  justify-content: center;
+  height: 35vh;
+  width: 50vw;
+  padding-left: 42rem;
+}
+.home-main-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  background: url("../runbackground2.jpg") center no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+}
+// .home-top-bar {
+//   border: 2px solid red;
+//   height: 30vh;
+//   width: 100vw;
+//   background: url("../runbackground.jpg") center no-repeat;
+//   background-size: cover;
+// }
+.home-left-sidebar {
+  display: flex;
+  border: 2px solid red;
+  height: 60vh;
+  width: 14vw;
+  background-color: black;
+}
+.side-nav {
+  color: white;
+}
+.plus-box {
+  height: 50vh;
+  width: 30vw;
+  border: 2px solid red;
+  float: right;
+}
+.footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 2rem;
+    background-color: rgba(0,0,0, 0.5);
+    text-align: center;
+    // border: 2px solid red;
+  }
+.quote-text {
+  font-family: 'Gloria Hallelujah', cursive;
+  quotes: '\0027' '\0027';
+  font-size: 35px;
+}
+.mote-main-wrapper {
+  background: url("../lion-gazelle.jpg") center no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+}
+#top-left-vid {
+  width: 0;
+	height: 0;
+	border-top: 300px solid red;
+	border-right: 350px solid transparent;
+  padding-bottom: 190px;
+
+}
+#top-right-vid {
+  width: 0;
+	height: 0;
+	border-top: 325px solid red;
+	border-left: 510px solid transparent;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+#vid-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  padding-bottom: 12rem;
+  justify-content: center;
+
+}
+#vids {
+  display: flex;
+  flex-direction: row;
+  width: 20vw;
+  height: 15vh;
+  // border: 2px solid blue;
+}
+#navbar {
+    position: fixed;
+    width: 100%;
+    height: 7vh;
+    background-color: rgba(0,0,0, 0.5);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: stretch;
+    z-index: 1;
+}
+
+.left-side{
+    height: inherit;
+    width: 30%;
+    margin-left: 2em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.right-side{
+    height: inherit;
+    width: 15%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+#navbar a {
+    text-decoration: none;
+    color:white;
+}
+.choose-main {
+  // display: flex;
+  background: linear-gradient(to right, #870000, #190a05);
+  height:100vh;
+  width: 100vw;
+}
+.circletrain22 {
+  // display: flex;
+  // flex-direction: column;
+  // vertical-align: middle;
+  top: 40px;
+  right: 300px;
+  height: 420px;
+  width: 420px;
+  border: 3px solid red;
+  border-radius: 50%;
+  background: url("../lionface.jpg") center no-repeat;
+  background-size: cover;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+.circletrain23 {
+  display: flex;
+  flex-direction: column;
+  vertical-align: middle;
+  top: 40px;
+  right: 50px;
+  height: 420px;
+  width: 420px;
+  border: 3px solid red;
+  border-radius: 50%;
+  background: url("../gazelle-eat.jpg") center no-repeat;
+  background-size: cover;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+#choose-species {
+font-family: 'Coda Caption', sans-serif;
+font-size: 123px;
+color: white;
+display: flex;
+justify-content: center;
+padding-top: 19px;
+padding-bottom: 41px;
+text-align: center;
+
+}
+.animal-container {
+  display: flex;
+  justify-content: space-around;
+}
+.home-right-quotes {
+  display: flex;
+  height: 45vh;
+  width: 21vw;
+  font-family: 'Barrio';
+  font-weight: bold;
+  quotes: '\0027' '\0027';
+  font-size: 35px;
+  color: white;
+  padding-top: 75px;
+}
