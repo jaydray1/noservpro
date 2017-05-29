@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)http://127.0.0.1:8080/#/signup -->
+<html ng-app="app" class="ng-scope"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    
+    <link rel="stylesheet" href="./Train Hard Run Far_files/styles.css">
+
+    <title>Train Hard Run Far</title>
+  </head>
+  <body ng-controller="mainCtrl" class="ng-scope" cz-shortcut-listen="true">
+
+
+    <!-- uiView: --><ui-view class="ng-scope"><div class="choose-main ng-scope">
+  <span id="choose-species">Choose Your Species</span>
+    <div class="animal-container">
+      <div class="circletrain22" ui-sref="signup-form-lion" href="#/signup-form-lion"></div>
+      <div class="circletrain23" ui-sref="signup-form-gazelle" href="#/signup-form-gazelle"></div>
+    </div>
+
+</div>
+</ui-view>
+
+
+
+
+
+    <script src="./Train Hard Run Far_files/angular.js"></script>
+    <script src="./Train Hard Run Far_files/angular-ui-router.js"></script>
+    <script src="./Train Hard Run Far_files/jquery.min.js"></script>
+    <script src="./Train Hard Run Far_files/bundle.js"></script>
+  <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function() {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					head.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					head.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function(msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			console.log('Live reload enabled.');
+		})();
+	}
+	// ]]>
+</script>
+
+
+</body></html>

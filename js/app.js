@@ -7,6 +7,7 @@ angular.module('app', ['ui.router'])
     .state ('home', {
       url: '/home'
     , templateUrl: './views/home.html'
+    , controller: 'mainCtrl'
     })
       .state('landing', {
         url: '/landing'
@@ -15,6 +16,7 @@ angular.module('app', ['ui.router'])
       .state('motivation', {
         url: '/motivation'
       , templateUrl: './views/motivation.html'
+      , controller: 'mainCtrl'
       })
       .state('about', {
         url: '/about'

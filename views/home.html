@@ -1,17 +1,44 @@
 <div class="home-main-wrapper">
+  <nav id="navbar">
 
+               <a ui-sref="home" target="_blank">Home</a>
+               <a ui-sref="landing" target="_blank">Landing</a>
+               <a ui-sref="motivation" target="_blank">Motivation</a>
+               <!-- <a href="" target="_blank">Discover</a>
+               <a href="" target="_blank">Contact Us</a> -->
 
+           <!-- <div class="right-side">
+              <a href="" target="_blank">Sign Up</a>
+              <a href="" target="_blank">Login</a>
+           </div> -->
+        </nav>
 
 <div class="home-right-quotes">"{{ quote.text}}"</div>
-    <div class="home-left-sidebar">
-      <ul class="side-nav">
-        <li ui-sref="home">Home</li>
-        <li ui-sref="about">About</li>
-        <li ui-sref="landing">Landing</li>
-        <li ui-sref="recipes">Recipes</li>
-        <li ui-sref="motivation">Motivate</li>
-      </ul>
-  </div>
-  <footer class="footer"></footer>
+    <div>
+      <div class="home-box" ng-repeat="r in recipes">
+          <p class="name-header">{{ r.name }}</p>
+          <br></br>
+          <ul ng-repeat="i in r.ingredients" class="ingred-list">{{ i }}</ul>
+          <br></br>
+          <h3 ng-repeat="d in r.directions">{{ d }}</h3>
+      </div>
+      <div class="home-box"><img src="../bread.jpg" style='height: 100%; width: 100%; object-fit: contain'></div>
+    </div>
+    <div>
+      <div class="home-box" ng-repeat="r in recipes2">
+          <p class="name-header">{{ r.name }}</p>
+          <br></br>
+          <ul ng-repeat="i in r.ingredients" class="ingred-list">{{ i }}</ul>
+          <br></br>
+          <h3 ng-repeat="d in r.directions">{{ d }}</h3>
+      </div>
+      <div class="home-box"><img src="../lentils.jpg" style='height: 100%; width: 100%; object-fit: contain'></div>
+      <!-- <div class="home-box">asdfasdf</div> -->
+    </div>
+</div>
 
+<div class="footer">
+
+</div>
+  <a href="#"><i class="fa fa-facebook-square"></i></a>
 </div>

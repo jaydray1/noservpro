@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
-@import url('https://fonts.googleapis.com/css?family=Montserrat+Subrayada');
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Subrayada');;
 @import url('https://fonts.googleapis.com/css?family=Barrio');
 @import url('https://fonts.googleapis.com/css?family=Coda+Caption:800');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+@import url('https://fonts.googleapis.com/css?family=Abel');
 
 body, html {
   height:100%;
@@ -13,8 +15,16 @@ li {
   text-align: center;
   padding-top: 45px;
 }
+a {
+color: inherit;
+text-decoration: none;
+}
 li:hover {
   background-color: grey;
+}
+.fun {
+  height: 50vh;
+  width: 50vw;
 }
 .banner {
   display: flex;
@@ -115,7 +125,7 @@ li:hover {
 .home-main-wrapper {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-between;
+  justify-content: space-around;
   background: url("../runbackground2.jpg") center no-repeat;
   background-size: cover;
   width: 100vw;
@@ -145,27 +155,37 @@ li:hover {
   border: 2px solid red;
   float: right;
 }
-.footer {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 2rem;
-    background-color: rgba(0,0,0, 0.5);
-    text-align: center;
-    // border: 2px solid red;
-  }
+// .footer {
+//   position: fixed;
+//   width: 100%;
+//   height: 7vh;
+//   border: 2px solid red;
+//   padding-top: 25px;
+//   align-items: center;
+//   }
 .quote-text {
   font-family: 'Gloria Hallelujah', cursive;
   quotes: '\0027' '\0027';
   font-size: 35px;
 }
 .mote-main-wrapper {
-  background: url("../lion-gazelle.jpg") center no-repeat;
+  background: url("../mote-run.jpg") center no-repeat;
   background-size: cover;
   width: 100vw;
   height: 100vh;
   margin: 0 auto;
+}
+#lion-or-gazelle {
+  position: absolute;
+  height: 10vh;
+  width: 30vw;
+  background-color: black;
+  border: 2px solid red;
+  margin-top: -32rem;
+  margin-left: 46rem;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
 }
 #top-left-vid {
   width: 0;
@@ -188,7 +208,8 @@ li:hover {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  padding-bottom: 12rem;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
   justify-content: center;
 
 }
@@ -207,9 +228,8 @@ li:hover {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    align-content: stretch;
+    justify-content: space-around;
+    padding-top: 25px;
     z-index: 1;
 }
 
@@ -253,6 +273,24 @@ li:hover {
   right: 300px;
   height: 420px;
   width: 420px;
+  border: 3px solid black;
+  border-radius: 50%;
+  background: url("../lionface.jpg") center no-repeat;
+  background-size: cover;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  opacity: .2;
+  transition: width 1s, height 1s, transform 2s;
+}
+.circletrain22:hover {
+  // display: flex;
+  // flex-direction: column;
+  // vertical-align: middle;
+  top: 40px;
+  right: 300px;
+  height: 690px;
+  width: 690px;
   border: 3px solid red;
   border-radius: 50%;
   background: url("../lionface.jpg") center no-repeat;
@@ -260,6 +298,8 @@ li:hover {
   text-align: center;
   font-size: 30px;
   color: white;
+  opacity: 1;
+  transform: translate(15rem);
 }
 .circletrain23 {
   display: flex;
@@ -276,6 +316,26 @@ li:hover {
   text-align: center;
   font-size: 30px;
   color: white;
+  opacity: .2;
+  transition: width 1s, height 1s, transform 2s;
+}
+.circletrain23:hover {
+  display: flex;
+  flex-direction: column;
+  vertical-align: middle;
+  top: 40px;
+  right: 50px;
+  height: 700px;
+  width: 700px;
+  border: 3px solid red;
+  border-radius: 50%;
+  background: url("../gazelle-eat.jpg") center no-repeat;
+  background-size: cover;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  opacity: 1;
+  transform: translate(-15rem);
 }
 #choose-species {
 font-family: 'Coda Caption', sans-serif;
@@ -302,4 +362,115 @@ text-align: center;
   font-size: 35px;
   color: white;
   padding-top: 75px;
+}
+// .air {
+//   height: 20vh;
+//   width: 20vw;
+//   border-radius: 2px solid red;
+// }
+.form {
+  position: absolute;
+  height: 30vh;
+  width: 20vw;
+  border: 2px solid red;
+}
+.homepage-hero-module {
+    border-right: none;
+    border-left: none;
+    position: relative;
+}
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+.video-container {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+}
+.video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+.video-container .filter {
+    z-index: 100;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+.video-container video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+}
+.video-container video.fillWidth {
+    width: 100%;
+}
+.welcome-lion-top {
+  position: absolute;
+  height: 20vh;
+  width: 50vw;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 6rem;
+  color: white;
+  margin-left: 25%;
+  margin-top: 7rem;
+  text-align: center;
+}
+.home-box {
+  margin-top: 92px;
+  height: 20vh;
+  width: 20vw;
+  // border: 2px solid red;
+  overflow: scroll;
+  background: #D4D4D4;
+  padding: 24px;
+  font-family: 'Abel', sans-serif;
+}
+.name-header {
+  font-size: 1.5em;
+  font-weight: bolder;
+  text-decoration: underline;
+  padding-bottom: 2px;
+  text-align: center;
+}
+.ingred-list {
+  font-size: 1em;
+  font-weight: 400;
+}
+.gazelle-main {
+  background: url("../holger-bartholoma-177466.jpg") center no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+}
+.welcome-gazelle-top {
+  position: absolute;
+  height: 20vh;
+  width: 100vw;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 4rem;
+  color: white;
+  margin-top: 3rem;
+  text-align: center;
+}
+.welcome-lion {
+  background: url("../cat-welcome.jpg") center no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+}
+.story-contain {
+  background: black;
 }
